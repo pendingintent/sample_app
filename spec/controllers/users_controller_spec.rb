@@ -42,7 +42,7 @@ describe UsersController do
         end
       end
       
-      it "should paginate users" do
+      it "should paginate losers" do
         get :index
         response.should have_selector('div.pagination')
         response.should have_selector('span.disabled', :content => "Previous")
